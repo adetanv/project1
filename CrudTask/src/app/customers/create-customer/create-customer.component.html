@@ -1,0 +1,39 @@
+<h3 style="background-color: darkseagreen; margin-top: 10px; color: green;">Create Customer</h3>
+
+<div style="background-color: darkcyan;">
+<div [hidden]="submitted" style="width:300px;">
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label for="name"><b>Name</b></label>
+            <input type="text" style="border: 2px solid black" class="form-control"  id="name" required [(ngModel)]="customer.name" name="name" placeholder="EnterName">
+        </div>
+        
+
+        <div class="form-group">
+            <label for="age"><b>Age</b></label>
+            <input type="text" style="border: 2px solid black"class="form-control" id="age" required [(ngModel)]="customer.age" name="age" placeholder="EnterAge">
+        </div>
+
+
+        <div class="form-group">
+            <label for="gender"><b>Gender</b></label>
+            <input type="text" style="border: 2px solid black" class="form-control" id="gender" required [(ngModel)]="customer.gender" name="gender" placeholder="EnterGender">
+        </div>
+
+        <div class="form-group">
+            <label for="gender"><b>PhoneNo</b></label>
+            <input type="text" style="border: 2px solid black" class="form-control" id="phoneno" required [(ngModel)]="customer.phoneno" name="phoneno" placeholder="EnterContactNo">
+        </div>
+
+
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
+
+</div>
+<div [hidden]="!submitted" style="background-color: darkgray;">
+    <h4>You submitted successfully!</h4>
+    <button class="btn btn-success" (click)="newCustomer()">Add</button>
+</div>

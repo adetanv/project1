@@ -1,0 +1,75 @@
+
+     
+   <header id="header" class="navbar">
+    <div class="container d-flex align-items-center">
+      <button class="openbtn" (click)="openNav()">☰</button>
+           <h1 class="logo mr-auto"><a href="index.html"><img src="../../assets/images/7087970.png"></a></h1>
+            
+  <div id="mySidebar" class="sidebar">
+    <a (click)="closeNav()" class="closebtn" >×</a>
+    <a href="#">Men</a>
+    <a href="#">Women</a>
+    <a href="#">Girls</a>
+    <a href="#">Boys</a>
+  </div>
+
+  <div id="main">
+  
+   </div>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li>   </li>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about/" routerLink="/About">About</a></li>
+          <li><a href="#menu">Inventory</a></li>
+          <li><a href="#specials">Special Offers</a></li>
+          <li><a href="#events">Logistics</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#chefs">Delivery Partners</a></li>
+          <li class="book-a-table text-center"><a href="#" onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+          <li class="book-a-table text-center"><a href="#book-a-table">Search a product</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+ 
+
+<!-- login button -->
+<li class="nav-item pl-2 mb-2 mb-md-0">
+  <!-- <button class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light"onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+ 
+</li>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="assets/images/img_avatar.png" alt="Avatar" class="avatar">
+        </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<router-outlet></router-outlet>

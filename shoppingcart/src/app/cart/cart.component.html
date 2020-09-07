@@ -1,0 +1,102 @@
+<script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="../../../assets/vendor/php-email-form/validate.js"></script>
+<script src="../../../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="../../../assets/vendor/counterup/counterup.min.js"></script>
+<script src="../../../assets/vendor/venobox/venobox.min.js"></script>
+<script src="../../../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="../../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="../../../assets/vendor/aos/aos.js"></script>
+
+<link src="../../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link src="../../../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+<link src="../../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link src="../../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+<link src="../../../assets/vendor/venobox/venobox.css" rel="stylesheet">
+<link src="../../../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link src="../../../assets/vendor/aos/aos.css" rel="stylesheet">
+
+<!-- hover images -->
+<section id="portfolio" class="portfolio">
+  <div class="container" data-aos="fade-up">
+    <div class="row" data-aos="fade-up" data-aos-delay="150">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul id="portfolio-flters">
+          <li data-filter="*" class="filter-active">All</li>
+        
+        </ul>
+      </div>
+
+
+
+      <div class=" portfolio-container" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap" >
+            <img src="assets/images/image5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Accessories</h4>
+              <div class="portfolio-links">
+                <a class="venobox" (click)="changeModal('assets/images/image5.jpg')" title="App 1"><i
+                    data-toggle="modal" data-target="#exampleModalPreview" class="fa fa-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap" >
+            <img src="assets/images/image9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <div class="portfolio-links">
+                <a (click)="changeModal('assets/images/image9.jpg')" class="venobox" title="Web 3"><i
+                    data-toggle="modal" data-target="#exampleModalPreview" class="fa fa-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="fa fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      
+
+      </div>
+
+    </div> .
+</div>
+</section>
+
+
+
+
+
+
+    <!-- 
+<button id="modalActivate" type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalPreview">
+    Launch demo modal
+</button> -->
+    <!-- Modal -->
+    <div class="modal fade right" id="exampleModalPreview" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+      <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+        <div class="modal-content-full-width modal-content ">
+          <div class=" modal-header-full-width   modal-header text-center">
+            <h5 class="modal-title w-100" id="exampleModalPreviewLabel"></h5>
+            <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+              <span style="font-size: 1.3em;" aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <img class="modImage" src="{{modalImage}}">
+          </div>
+          <div class="modal-footer-full-width  modal-footer">
+            <button type="button" class="btn btn-danger btn-md btn-rounded" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary btn-md btn-rounded">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,12 @@
+.card{
+  
+    background-color: black;
+    color: white;
+}
+
+.product-btn{
+    background-color: black;
+    color:  rgba(205, 164, 94, 0.7) ;
+    border: 1px solid rgba(205, 164, 94, 0.7) ;
+    border-radius: 3px;
+}

@@ -1,0 +1,215 @@
+
+
+
+
+<div class=" container ">
+
+  <div class="row ">
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img style="width:1110px;; height: 811px;" src="../../../assets/images/download.jpg" alt="Angular Carousel 1">
+        </div>
+        <div class="carousel-caption">
+          <h3>select product here</h3>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img style="width:1110px;; height: 811px;" src="../../../assets/images/image.jpg" alt="Angular Carousel 2">
+        </div>
+        <div class="carousel-caption">
+          <h3>select product here</h3>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img style="width:1110px;; height: 811px;" src="../../../assets/images/image2.jpg" alt="Angular Carousel 1">
+        </div>
+        <div class="carousel-caption">
+          <h3>select product here</h3>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img style="width:1110px;; height: 811px;" src="../../../assets/images/image3.jpg" alt="Angular Carousel 1">
+        </div>
+        <div class="carousel-caption">
+          <h3>select product here</h3>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img style="width:1110px;; height: 811px;" src="../../../assets/images/image4.jpg" alt="Angular Carousel 1">
+        </div>
+        <div class="carousel-caption">
+          <h3>select product here</h3>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img  style="width:1110px;; height: 811px;" src="../../../assets/images/image5.jpg" alt="Angular Carousel 1">
+        </div>
+        <div class="carousel-caption">
+          <h3>select product here</h3>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img style="width:1110px;; height: 811px;" src="../../../assets/images/image6.webp" alt="Angular Carousel 1">
+        </div>
+        <div class="carousel-caption">
+          <h3>select product here</h3>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+
+</div>
+
+<!-- grid images -->
+
+
+
+
+<div class="container padbal">
+  <div class="row">
+    <div class="col-lg-3 first">
+      <img src="../../../assets/images/image4.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="overlay-trans">
+
+        </div>
+        <div><button class="cart btn btn-primary overly-text buttom ">Add to Cart</button></div>
+
+      </div>
+    </div>
+
+    <div class="col-lg-3 second">
+      <img src="../../../assets/images/image3.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="overlay-trans">
+
+        </div>
+        <div><button class="btn btn-primary overly-text buttom ">Add to Cart</button></div>
+
+      </div>
+    </div>
+
+    <div class="col-lg-3 third">
+      <img src="../../../assets/images/image2.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="overlay-trans">
+
+        </div>
+        <div><button class="btn btn-primary overly-text buttom ">Add to Cart</button></div>
+
+      </div>
+    </div>
+
+    <div class="col-lg-3 forth">
+      <img src="../../../assets/images/image.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="overlay-trans">
+
+        </div>
+        <div><button class="btn btn-primary overly-text buttom ">Add to Cart</button></div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- repeat pictures -->
+
+  <br>
+
+  <div class="row">
+    <div class="col-lg-3 first">
+      <img src="../../../assets/images/image4.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="overlay-trans">
+
+        </div>
+        <div><button class="btn btn-primary overly-text buttom ">Add to Cart</button></div>
+
+      </div>
+    </div>
+
+    <div class="col-lg-3 second">
+      <img src="../../../assets/images/image3.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="overlay-trans">
+
+        </div>
+        <div><button class="btn btn-primary overly-text buttom ">Add to Cart</button></div>
+
+      </div>
+    </div>
+
+    <div class="col-lg-3 third">
+      <img src="../../../assets/images/image2.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="overlay-trans">
+
+        </div>
+        <div><button class="btn btn-primary overly-text buttom ">Add to Cart</button></div>
+
+      </div>
+    </div>
+
+    <div class="col-lg-3 forth">
+      <img src="../../../assets/images/image.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <div class="overlay-trans">
+
+        </div>
+        <div><button class="btn btn-primary overly-text buttom ">Add to Cart</button></div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+</div>
+<!-- 
+
+<mdb-carousel [animation]="'slide'">
+  <mdb-carousel-item>
+    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="First slide">
+  </mdb-carousel-item>
+ </mdb-carousel> -->
+
+ 
+  <!--/.Indicators-->
+
+  
+  <div class="w-100">
+    <ngb-carousel class="carblack">
+      <ng-template  ngbSlide>
+        <div class="row">
+        <div *ngFor="let item of data;index as i" class="col-lg-2">
+          <img  src="{{item.src}}" alt="Angular Carousel 1">
+        </div>
+        </div>  
+        <div class="carousel-caption">
+          <h3>select product here</h3>
+        </div>
+      </ng-template>
+      <ng-template  ngbSlide>
+        <div class="row">
+        <div *ngFor="let item of data1;index as i" class="col-lg-2">
+          <img  src="{{item.src}}" alt="Angular Carousel 1">
+        </div>
+        </div>  
+        <div class="carousel-caption">
+          <h3>select product here</h3>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
